@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Blinds Men | Roller Blinds/Venetian Blinds @ affordable prices</title>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Laura">
+	<meta name="description" content="The Blinds Men website">
+
+	<!-- Prepare website to be responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image" href="../images/TBMFavIcon.png" width="32px">
+		
+	<!-- includes meta query to hide slider on large devices -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<!-- There is a specific CSS file for Wallop slider. -->
+	<link rel="stylesheet" href="../css/wallop.css">
+
+	<!-- If you want the sliding animation, then you need to link to this file -->
+	<link rel="stylesheet" type="text/css" href="../css/wallop--slide.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://use.fontawesome.com/ba097f05c1.js"></script>
+</head>
+<body>
+<header> 
+
+<!-- ========= hamburger code ======= -->
+<nav>
+	<div id="burger-container">
+        <div id="burger" style="cursor:pointer" onclick="toggleMobileMenu()">
+	        <span>&nbsp;</span>
+	        <span>&nbsp;</span>
+	        <span>&nbsp;</span>
+	        <span>&nbsp;</span>
+	    </div>
+	</div>
+	<div id="header-inner">
+		<h2 class="phone">Call Now: 0800 123 456</h2>
+		<a href="../index.html" class="header-logo"><img src="../images/TBM_Logo_light.png" height="50" width="100" alt="The Blinds Men logo"></a>
+	</div>
+</nav>
+	<div>
+		<ul id="menu-links">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="products.html" class="current">Products</a></li>
+		    <li><a href="howto.html">How To</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+			<li><a href="quote.html">Quote</a></li>
+		</ul>
+	</div>
+</header>
+<!-- End Header -->
+
+<!-- Products page -->
+<div class="container_body">
+	<ul class="breadcrumb">
+        <li class="inline_breadcrumb"><a href="../index.html">Home </a>|</li>
+        <li class="inline_breadcrumb active">Products</li>
+    </ul>
+
+	<h1>Products</h1>
+		<p class="contact_intro">We offer a limited range which keep our prices low.</p>
+
+	<div class="products products_dark">
+		<div class="desktop-width" id="blockout_section">
+			<h2>Blockout Roller Blinds</h2>
+			<div class="product_wrapper">
+			<div class="blockout"><img src="../images/icon_blockout2.jpg" alt="Blockout blind image"></div>
+			<p>The mild texture and modern colours of our blockout range enhance the ambience of any room, cheaper than most curtains and more versatile, providing night time privacy. Please note, all Inside fit blinds will have gaps between the window frame and fabric.<br>
+			Fabric Range: Icon, Vibe, One Block, Sanctuary.
+			</p>
+			<p><span class="total-blockoutBlinds"></span> blockout blinds sold to date!</p>
+			</div>
+			<div class="row" id="row1">
+				<div class="column">
+					<img src="../images/icon_range.jpg" onclick="openModalBlockout();currentSlideBlockout(1)" class="hover-shadow" alt="Blockout Roller Blind, fabric selection" width="150" height="100">
+				</div>
+				<div class="column">
+					<img src="../images/vibe_range.jpg" onclick="openModalBlockout();currentSlideBlockout(2)" class="hover-shadow" alt="Blockout Roller Blind, fabric selection" width="150" height="100">
+				</div>
+				<div class="column">
+					<img src="../images/one_blockout_resize.jpg" onclick="openModalBlockout();currentSlideBlockout(3)" class="hover-shadow" alt="Blockout Roller Blind, fabric selection" width="150" height="100">
+				</div>
+				<div class="column">
+					<img src="../images/sanctuary_blockout_resize.jpg" onclick="openModalBlockout();currentSlideBlockout(4)" class="hover-shadow" alt="Blockout Roller Blind, fabric selection" width="150" height="100">
+				</div>
+			</div>
+
+			<div id="myModal-Blockout" class="modal">
+			  <span class="close cursor" onclick="closeModalBlockout()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides-Blockout">
+					    <div class="numbertext">1 / 4</div>
+					    	<img src="../images/icon_range.jpg" style="width:100%" alt="Icon Fabric">
+					</div>
+
+					<div class="mySlides-Blockout">
+					    <div class="numbertext">2 / 4</div>
+					    	<img src="../images/vibe_range.jpg" style="width:100%" alt="Vibe Fabric">
+					</div>
+
+					<div class="mySlides-Blockout">
+					    <div class="numbertext">3 / 4</div>
+					        <img src="../images/one_blockout_resize.jpg" style="width:100%" alt="One Block Fabric">
+					</div>
+
+					<div class="mySlides-Blockout">
+					    <div class="numbertext">4 / 4</div>
+					        <img src="../images/sanctuary_blockout_resize.jpg" style="width:100%" alt="Sanctuary Fabric">
+					</div>
+
+					<a class="prev" onclick="plusSlidesBlockout(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlidesBlockout(1)">&#10095;</a>
+
+					<div class="caption-container">
+					    <h4 id="caption-Blockout"></h4>
+					</div>
+
+					<div class="column">
+					    <img class="demo-Blockout" src="../images/thumbnail_icon_range.jpg" onclick="currentSlideBlockout(1)" alt="Icon Blockout Fabric">
+					</div>
+
+					<div class="column">
+					    <img class="demo-Blockout" src="../images/thumbnail_vibe_range.jpg" onclick="currentSlideBlockout(2)" alt="Vibe Blockout Fabric">
+					</div>
+
+				    <div class="column">
+				      <img class="demo-Blockout" src="../images/thumbnail_one_blockout.jpg" onclick="currentSlideBlockout(3)" alt="One Block Blockout Fabric">
+				    </div>
+
+				    <div class="column">
+				      <img class="demo-Blockout" src="../images/thumbnail_sanctuary_blockout.jpg" onclick="currentSlideBlockout(4)" alt="Sanctuary Blockout Fabric">
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="products">
+		<div class="desktop-width" id="sunscreen_section">
+			<h2>Sunscreen Roller Blinds</h2>
+			<div class="product_wrapper">
+			<div class="sunscreen"><img src="../images/sunscreen2.jpg" alt="Sunscreen blind image"></div>
+			<p>Protect your furnishings, our versatile sunscreen blinds​ are designed to withstand the harmful UV rays associated with New Zealand sun; cutting out glare whilst allowing outward vision and daytime privacy. <br>
+			3%,  5% &  10% Openness Factors.<br>
+			5 to 10 year warranty on all blinds.<br>
+			Our Sunscreen blinds, will enhance the insulation in your home by up to 20%.</p>
+			<p><span class="total-sunscreenBlinds"></span> sunscreen blinds sold to date!</p>
+			</div>
+
+			<div class="row" id="row2">
+				<div class="column">
+					<img src="../images/one_sunscreen_resize.jpg" onclick="openModalSunscreen();currentSlideSunscreen(1)" class="hover-shadow" alt="Sunscreen Roller Blind, fabric selection" width="150" height="100">
+				</div>
+			</div>
+
+			<div id="myModal-Sunscreen" class="modal">
+				<span class="close cursor" onclick="closeModalSunscreen()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides-Sunscreen">
+							<div class="numbertext">1 / 4</div>
+					   		<img src="../images/one_sunscreen_resize.jpg" style="width:100%" alt="Sunscreen Fabric">
+						</div>
+
+					<!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+					    <div class="caption-container">
+					      <h4 id="caption-Sunscreen"></h4>
+					    </div>
+
+					    <div class="column">
+					      <img class="demo-Sunscreen" src="../images/thumbnail_one_sunscreen.jpg" onclick="currentSlideSunscreen(1)" alt="Sunscreen Fabric">
+					    </div>
+				  </div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="products products_dark">
+		<div class="desktop-width" id="venetian_section">
+			<h2>PVC Venetian Blinds</h2>
+			<div class="product_wrapper">
+			<div class="pvc"><img src="../images/pvc_venetian.jpg" alt="Venetian blind"></div>
+			<p>Available in Corn Ghostgum Grey or classic white. Latest technology to compliment the 5 year warranty. New 70mm flat fascias or classic vintage style.
+			This is a great alternative to wooden venetian blinds.<br>
+			Ideal for kitchens, bathrooms and laundries or any other wet area.</p>
+			</div>
+
+			<!-- <img id="myImg" src="http://lorempixel.com/output/people-q-c-300-200-2.jpg" alt="Blockout Roller Blind, fabric selection" width="150" height="100"> -->
+
+			<!-- The Modal -->
+			<!-- <div id="myModal1" class="modal">
+			  <span class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <div id="caption"></div>
+			</div> -->
+
+			<div class="row" id="row3">
+				<div class="column">
+				    <img src="../images/pvc.jpg" onclick="openModalVenetian();currentSlideVenetian(1)" class="hover-shadow" alt="pvc Venetian Blind, fabric selection" width="150" height="100">
+				</div>
+			</div>
+
+			<div id="myModal-Venetian" class="modal">
+				<span class="close cursor" onclick="closeModalVenetian()">&times;</span>
+					<div class="modal-content">
+				    	<div class="mySlides-Venetian">
+				      		<div class="numbertext">1 / 4</div>
+				        	<img src="../images/pvc.jpg" style="width:100%" alt="PVC Venetian Slats">
+				    	</div>
+
+					<!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  		<a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+					    <div class="caption-container">
+					      <h4 id="caption-Venetian"></h4>
+					    </div>
+					    <div class="column">
+					      <img class="demo-Venetian" src="../images/thumbnail_pvc.jpg" onclick="currentSlideVenetian(1)" alt="PVC Venetian Slats">
+					    </div>
+				  	</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- End of products -->
+
+
+
+<footer class="footer">
+	<h2>Connect with The Blinds Men</h2>
+	<!-- Social media links -->
+	<ul class="social">
+		<li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+		<li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+	</ul>
+
+<hr class="footer-break">
+
+	<div class="footer_menu">		        
+		<ul class="nav-links">
+			<li><a href="../index.html">Home </a>|</li> 
+			<li>Products |</li>
+			<li><a href="howto.html">How To </a>|</li>
+			<li><a href="contact.html">Contact Us </a>|</li>	  
+			<li><a href="#">Quote</a></li>
+		</ul>
+	</div>
+
+	<div class="copyright">
+		<span>&copy; <span id="date"></span> Copyright for The Blinds Men. All Rights Reserved.</span>
+	</div>
+</footer>
+
+	<!-- modal - jquery needed -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+
+    <!-- Wallop slider requires a specific JavaScript file -->
+	<script src="../js/Wallop.min.js"></script>
+	<script>
+	  var wallopEl = document.querySelector('.Wallop');
+	  var slider = new Wallop(wallopEl);
+	  var wallopEl2 = document.querySelector('.Wallop2');
+	  var slider2 = new Wallop(wallopEl2);
+	</script>
+
+	<!-- Get current year -->
+	<script type="text/javascript">
+	    var currentYear = (new Date).getFullYear();
+	    $("#date").text( (new Date).getFullYear() );
+	</script>
+
+	</body>
+</html>

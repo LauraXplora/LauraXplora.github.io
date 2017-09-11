@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>The Blinds Men | Roller Blinds/Venetian Blinds @ affordable prices</title>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Laura">
+	<meta name="description" content="The Blinds Men website">
+
+	<!-- Prepare website to be responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image" href="../images/TBMFavIcon.png" width="32px">
+	
+	<!-- includes meta query to hide slider on large devices -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<!-- There is a specific CSS file for Wallop slider. -->
+	<link rel="stylesheet" href="../css/wallop.css">
+
+	<!-- If you want the sliding animation, then you need to link to this file -->
+	<link rel="stylesheet" type="text/css" href="../css/wallop--slide.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://use.fontawesome.com/ba097f05c1.js"></script>
+</head>
+<body>
+<header> 
+
+<!-- ========= hamburger code ======= -->
+<nav>
+	<div id="burger-container">
+        <div id="burger" style="cursor:pointer" onclick="toggleMobileMenu()">
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+        </div>
+    </div>
+
+	<div id="header-inner">
+		<h2 class="phone">Call Now: 0800 123 456</h2>
+		<a href="index.html" class="header-logo"><img src="../images/TBM_Logo_light.png" height="50" width="100" alt="The Blinds Men logo"></a>
+
+	</div>
+</nav>
+	<div>
+		<ul id="menu-links">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+		    <li><a href="howto.html">How To</a></li>
+		    <li><a href="contact.html" class="current">Contact</a></li>
+			<li><a href="quote.html">Quote</a></li>
+		</ul>
+	</div>
+</header>
+<!-- End Header -->
+
+<!-- Contact page -->
+<div class="container_body">
+	<ul class="breadcrumb">
+        <li class="inline_breadcrumb"><a href="../index.html">Home </a>|</li>
+        <li class="inline_breadcrumb active">Contact Us</li>
+    </ul>
+
+	<h1>Contact Us</h1>
+		<p class="contact_intro">Do you have a query?<br>We would love to discuss your blinds requirements with you.
+		You can contact us on Ph 0800 BLINDSMEN or fill in the email contact form below.</p>
+
+	<hr class="page-break">
+
+	<div id="contact">
+	
+		<form id="contact-form" action="javascript:submitForm()" method="POST">
+		<h3>Contact Details</h3>
+
+				<div class="form-book form-group">
+					<label class="contact_label form_label" for="fullname">Full Name</label>
+					<input type="text" name="fullname" id="fullname" required minlength="3">
+					<span id="fullname-error"></span>
+				</div>
+				<div class="form-book form-group">
+					<label class="contact_label form_label" for="email">Email</label>
+					<input type="email" name="email" id="email" required>
+					<span id="email-error"></span>
+				</div>
+				<div class="form-book form-group">
+					<label class="contact_label form_label" for="phone">Phone</label>
+					<input type="tel" name="phone" id="phone" required pattern="[+ 0-9]{15}" title="Please enter 15 characters. Accepted format: 0-9 and +." >
+					<span id="phone-error"></span>
+				</div>
+				<div class="form-book form-group">
+					<label class="contact_label form_label" for="subject">Subject</label>
+					<input type="text" name="subject" id="subject" required>
+					<span id="subject-error"></span>
+				</div>
+				<div class="form-book form-group">
+					<label class="contact_label form_label" for="message">Message</label>
+					 <textarea name="message" id="message" required minlength="10" maxlength="15" rows="5" cols="50"></textarea>
+					 <span id="message-error"></span>
+				</div>		
+
+			<button id="contact-send" type="submit">Send</button>
+		</form>
+		<div id="submit-message" class="submit-question">
+			<p>Your message was successfully sent.</p> <p>You will hear back from us soon.</p>
+		</div>
+	</div>
+
+	<div class="map">
+		<div>
+			<p>168 Lambton Quay <br> Wellington 6011</p>
+		</div>
+		<div id="tbm-map"></div>
+	</div>
+</div>
+
+
+
+
+<footer class="footer">
+		<h2>Connect with The Blinds Men</h2>
+	<!-- Social media links -->
+	<ul class="social">
+		<li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+		<li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+	</ul>
+
+<hr class="footer-break">
+
+ 	<div class="footer_menu">		        
+		<ul class="nav-links">
+		    <li><a href="../index.html">Home </a>|</li> 
+		    <li><a href="products.html">Products </a>|</li>
+		    <li><a href="howto.html">How To </a>|</li>
+		    <li>Contact Us |</li>  
+		    <li><a href="quote.html">Quote</a></li>
+		</ul>
+	</div>
+
+	<div class="copyright">
+		<span>&copy; 2017 Copyright for The Blinds Men. All Rights Reserved.</span>
+	</div>
+</footer>
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <!-- Wallop slider requires a specific JavaScript file -->
+	<script src="../js/Wallop.min.js"></script>
+	<script>
+	  var wallopEl = document.querySelector('.Wallop');
+	  var slider = new Wallop(wallopEl);
+	  var wallopEl2 = document.querySelector('.Wallop2');
+	  var slider2 = new Wallop(wallopEl2);
+	</script>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbteSZsIBQn0W2izGUjJYBEFg-P516QbQ&callback=initMap"
+  type="text/javascript"></script>
+  	<script type="text/javascript" src="../js/map.js"></script>
+
+  	<script type="text/javascript">
+	 	// check when DOM(page) is loaded 
+		document.addEventListener("DOMContentLoaded", function(){
+
+		// find the form (e.g. queryselector)
+		var theForm = document.querySelector("#contact-form");
+		console.log(theForm);
+
+		//call form validation and pass the form to it
+		formValidation(theForm);
+
+	}); 
+		// (closing it)
+
+	 	</script>
+
+</body>
+</html>

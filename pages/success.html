@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Blinds Men | Roller Blinds/Venetian Blinds @ affordable prices</title>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Laura">
+	<meta name="description" content="The Blinds Men website">
+
+	<!-- Prepare website to be responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image" href="../images/TBMFavIcon.png" width="32px">
+		
+	<!-- includes meta query to hide slider on large devices -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<!-- There is a specific CSS file for Wallop slider. -->
+	<link rel="stylesheet" href="../css/wallop.css">
+
+	<!-- If you want the sliding animation, then you need to link to this file -->
+	<link rel="stylesheet" type="text/css" href="../css/wallop--slide.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://use.fontawesome.com/ba097f05c1.js"></script>
+</head>
+<body>
+<header> 
+
+<!-- ========= hamburger code ======= -->
+<nav>
+	<div id="burger-container">
+        <div id="burger" style="cursor:pointer" onclick="toggleMobileMenu()">
+	        <span>&nbsp;</span>
+	        <span>&nbsp;</span>
+	        <span>&nbsp;</span>
+	        <span>&nbsp;</span>
+	    </div>
+	</div>
+	<div id="header-inner">
+		<h2 class="phone">Call Now: 0800 123 456</h2>
+		<a href="../index.html" class="header-logo"><img src="../images/TBM_Logo_light.png" height="50" width="100" alt="The Blinds Men logo"></a>
+	</div>
+</nav>
+	<div>
+		<ul id="menu-links">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="products.html" class="current">Products</a></li>
+		    <li><a href="howto.html">How To</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+			<li><a href="quote.html">Quote</a></li>
+		</ul>
+	</div>
+</header>
+<!-- End Header -->
+
+<div class="success-page">
+	<h3 class="success-message">Your blind quote was successfully sent.
+	<br>You will hear back from us soon.</h3>
+	<h2 class="thank-message">Have a great day.</h2>
+</div>
+<!-- End of success page -->
+
+
+<footer class="footer">
+	<h2>Connect with The Blinds Men</h2>
+	<!-- Social media links -->
+	<ul class="social">
+		<li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+		<li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+	</ul>
+
+<hr class="footer-break">
+
+	<div class="footer_menu">		        
+		<ul class="nav-links">
+			<li><a href="../index.html">Home </a>|</li> 
+			<li>Products |</li>
+			<li><a href="howto.html">How To </a>|</li>
+			<li><a href="contact.html">Contact Us </a>|</li>	  
+			<li><a href="#">Quote</a></li>
+		</ul>
+	</div>
+
+	<div class="copyright">
+		<span>&copy; <span id="date"></span> Copyright for The Blinds Men. All Rights Reserved.</span>
+	</div>
+</footer>
+
+	<!-- modal - jquery needed -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+
+	<!-- Get current year -->
+	<script type="text/javascript">
+	    var currentYear = (new Date).getFullYear();
+	    $("#date").text( (new Date).getFullYear() );
+	</script>
+
+	</body>
+</html>

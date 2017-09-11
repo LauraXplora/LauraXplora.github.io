@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>The Blinds Men | Roller Blinds/Venetian Blinds @ affordable prices</title>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Laura">
+	<meta name="description" content="The Blinds Men website">
+
+	<!-- Prepare website to be responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image" href="../images/TBMFavIcon.png" width="32px">
+	
+	<!-- includes meta query to hide slider on large devices -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<!-- There is a specific CSS file for Wallop slider. -->
+	<link rel="stylesheet" href="../css/wallop.css">
+
+	<!-- If you want the sliding animation, then you need to link to this file -->
+	<link rel="stylesheet" type="text/css" href="../css/wallop--slide.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<script src="https://use.fontawesome.com/ba097f05c1.js"></script>
+</head>
+<body>
+<header> 
+
+<!-- ========= hamburger code ======= -->
+<nav>
+	<div id="burger-container">
+        <div id="burger" style="cursor:pointer" onclick="toggleMobileMenu()">
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+        </div>
+    </div>
+
+	<div id="header-inner">
+		<h2 class="phone">Call Now: 0800 123 456</h2>
+		<a href="index.html" class="header-logo"><img src="../images/TBM_Logo_light.png" height="50" width="100" alt="The Blinds Men logo"></a>
+	</div>
+</nav>
+	<div>
+		<ul id="menu-links">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+		    <li><a href="howto.html">How To</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+			<li><a href="quote.html" class="current">Quote</a></li>
+		</ul>
+	</div>
+</header>
+<!-- End Header -->
+
+<!-- Quote page -->
+<div class="container_body_quote">
+	<ul class="breadcrumb">
+        <li class="inline_breadcrumb"><a href="../index.html">Home </a>|</li>
+        <li class="inline_breadcrumb active">Quote</li>
+    </ul>
+	<h1>Quote</h1>
+	<p class="quote_intro">Please fill out this form with your window measurement for either inside or outside fit.<br>To find out more read our 'Measure' and 'FAQ' PDF's on our <a href="howto.html">How To page</a> for more information.</p>
+
+<hr class="page-break">
+
+	<div id="quote">
+		
+		<form id="quote-form" action="success.html" method="GET">
+			<div class="details">
+			<h3>Contact Details</h3>
+			<fieldset>
+				<div class="form-book form-group">
+				    <label class="contact_label form_label" for="fullname">Full Name</label>
+				    <input type="text" name="fullname" id="fullname" required minlength="2">
+				    <span id="fullname-error"></span>
+				</div>
+				<div class="form-book form-group">
+					<label class="contact_label form_label" for="email">Email</label>
+					<input type="email" name="email" id="email" required>
+					<span id="email-error"></span>
+				</div>
+				<div class="form-book form-group">
+					<label class="contact_label form_label" for="phone">Phone</label>
+					<input type="tel" name="phone" id="phone" required pattern="[+ 0-9]{15}" title="Please enter 15 characters. Accepted format: 0-9 and +." >
+					<span id="phone-error"></span>
+				</div>
+				<div class="form-book form-group">
+					<label class="contact_label form_label" for="city">City</label>
+					<input type="text" name="city" id="city" required>
+					<span id="city-error"></span>
+				</div>
+			</fieldset>
+			</div>
+		
+<hr class="page-break">
+
+<!-- quote input for blind -->
+	<div class="quote_container">
+		<div class="blind_quote_section">
+			<h3>Blind One</h3>
+				<div class="form-book form-group">		
+					<label class="contact_label form_label" for="room">Room (e.g. Lounge, Kitchen)</label>
+					<input type="text" name="room" id="room" required minlength="4">
+					<span id="room-error"></span>
+				</div>
+				<div class="form-book form-group">
+					<label class="contact_label form_label" for="blindOption1">Blind Type</label>
+					<input type="text" class="blind-type" id="blindOption1" list="blind-type" name="blind-type" placeholder="Choose Blind...">
+					  <datalist id="type">
+					    <option value="Blockout Roller Blind"></option>
+					    <option value="Sunscreen Roller Blind"></option>
+					    <option value="Wooden Venetian Blind"></option>
+					  </datalist>
+					  <span id="blindOption1-error"></span>
+				</div>
+				<div class="form-book form-group">		
+					<label class="contact_label form_label" for="width">Window Width (mm)</label>
+					<input type="text" name="width" id="width" required minlength="4">
+					<span id="width-error"></span>
+				</div>
+				<div class="form-book form-group">		
+					<label class="contact_label form_label" for="drop">Window Drop (mm)</label>
+					<input type="text" name="drop" id="drop" required minlength="4">
+					<span id="drop-error"></span>
+				</div>
+				<!-- blind one fit - radio button -->
+				<div class="container-r-one">
+					<p>Blind Fit</p>
+					<ul>
+						<li>
+							<input type="radio" id="inside-fit-one" name="fit"><span id="inside-fit-one-error"></span>
+							<label for="inside-fit-one">Inside Fit</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="outside-fit-one" name="fit"><span id="outside-fit-one-error"></span>
+							<label for="outside-fit-one">Outside Fit</label>
+							<div class="check"></div>
+						</li>
+					</ul>
+				</div>
+		</div>
+
+<hr class="page-break">
+
+		<div class="blind_quote_section">
+			<h3>Blind Two</h3>
+				<div class="form-book form-group">		
+					<label class="contact_label form_label" for="room2">Room (e.g. Lounge, Kitchen)</label>
+					<input type="text" name="room" id="room2" required minlength="4">
+					<span id="room2-error"></span>
+				</div>
+				<div class="form-book form-group">
+					<label class="contact_label form_label" for="blindOption2">Blind Type</label>
+					<input class="blind-type" id="blindOption2" list="blind-type" name="blind-type" placeholder="Choose Blind...">
+					  <datalist id="blind-type">
+					    <option value="Blockout Roller Blind"></option>
+					    <option value="Sunscreen Roller Blind"></option>
+					    <option value="Wooden Venetian Blind"></option>
+					  </datalist>
+					  <span id="blindOption2-error"></span>
+				</div>
+				<div class="form-book form-group">		
+					<label class="contact_label form_label" for="width2">Window Width (mm)</label>
+					<input type="text" name="width" id="width2" required minlength="4">
+					<span id="width2-error"></span>
+				</div>
+				<div class="form-book form-group">		
+					<label class="contact_label form_label" for="drop2">Window Drop (mm)</label>
+					<input type="text" name="drop" id="drop2" required minlength="4">
+					<span id="drop2-error"></span>
+				</div>
+				<!-- blind fit - radio button -->
+				<div class="container-r-two">
+					<p>Blind Fit</p>
+					<ul>
+						<li>
+							<input type="radio" id="inside-fit-two" name="fit-two"><span id="inside-fit-two-error"></span>
+							<label for="inside-fit-two">Inside Fit</label>
+							<div class="check-two"></div>
+						</li>
+						<li>
+							<input type="radio" id="outside-fit-two" name="fit-two"><span id="outside-fit-two-error"></span>
+							<label for="outside-fit-two">Outside Fit</label>
+							<div class="check-two"></div>
+						</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+<!-- end quote input ofr blind -->
+<hr class="page-break">
+	<div class="details">
+		<div class="form-book message form-group">
+			<label class="contact_label form_label" for="messageQ">Message/Question</label>
+			<textarea name="message" id="messageQ" required minlength="10" maxlength="15" rows="5" cols="50"></textarea>
+			<span id="messageQ-error"></span>
+		</div>
+	</div>
+		
+	<button id="quote-send" type="submit">Send</button>
+	</form>
+		<div id="quote-note">
+			<p>This quote is based on a self measure and self install.
+			If you require an in home consultation please refer to our <a href="contact.html">contact page</a>.</p>
+		</div>
+	</div>
+</div>
+<!-- End quote page -->
+
+<footer class="footer">
+	<h2>Connect with The Blinds Men</h2>
+	<!-- Social media links -->
+	<ul class="social">
+		<li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+		<li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+	</ul>
+
+<hr class="footer-break">
+
+ 	<div class="footer_menu">		        
+		<ul class="nav-links">
+		    <li><a href="../index.html">Home </a>|</li> 
+		    <li><a href="products.html">Products </a>|</li>
+		    <li><a href="howto.html">How To </a>|</li>
+		    <li><a href="contact.html">Contact Us </a>|</li>  
+		    <li>Quote</li>
+		</ul>
+	</div>
+	<div class="copyright">
+		<span>&copy; <span id="date"></span> Copyright for The Blinds Men. All Rights Reserved.</span>
+	</div>
+</footer>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+
+	<!-- Get current year -->
+	<script type="text/javascript">
+	    var currentYear = (new Date).getFullYear();
+	    $("#date").text( (new Date).getFullYear() );
+	</script>
+	<script type="text/javascript">
+	 	// check when DOM(page) is loaded 
+		document.addEventListener("DOMContentLoaded", function(){
+		// find the form (e.g. queryselector)
+		var theForm = document.querySelector("#quote-form");
+		console.log(theForm);
+		//call form validation and pass the form to it
+		formValidation(theForm);
+	}); 
+	 	</script>
+
+</body>
+</html>
